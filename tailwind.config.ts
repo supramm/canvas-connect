@@ -57,6 +57,22 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        canvas: {
+          DEFAULT: "hsl(var(--canvas-bg))",
+          grid: "hsl(var(--canvas-grid))",
+        },
+        toolbar: {
+          DEFAULT: "hsl(var(--toolbar-bg))",
+          border: "hsl(var(--toolbar-border))",
+        },
+        user: {
+          1: "hsl(var(--user-1))",
+          2: "hsl(var(--user-2))",
+          3: "hsl(var(--user-3))",
+          4: "hsl(var(--user-4))",
+          5: "hsl(var(--user-5))",
+          6: "hsl(var(--user-6))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
