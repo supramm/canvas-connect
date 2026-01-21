@@ -11,6 +11,19 @@ Canvas Connect is a real-time collaborative drawing application that allows mult
 - Node.js (v18 or later recommended)
 - npm
 
+## Live Demo
+
+The application is deployed and accessible here:
+
+[🔗 https://scribbl-pearl.vercel.app/](https://pixel-pals-draw.lovable.app)
+
+### Demo Instructions
+- Open the link in two or more browser tabs or different browsers.
+- Start drawing in one window and observe real-time updates in the others.
+- This simulates multiple users collaborating on the same canvas simultaneously.
+
+No local setup is required for the demo.
+****
 ### Steps to run locally
 
 ```bash
