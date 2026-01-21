@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
 
-## Project info
+# Canvas Connect
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Canvas Connect is a real-time collaborative drawing application that allows multiple users to draw simultaneously on a shared canvas. The focus of this project is on real-time synchronization, efficient canvas operations, and handling concurrent user interactions.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Setup Instructions
 
-**Use Lovable**
+### Prerequisites
+- Node.js (v18 or later recommended)
+- npm
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Steps to run locally
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+npm install
+npm start
+````
 
-**Use your preferred IDE**
+After starting, the app will be available at the local development URL shown in the terminal (usually `http://localhost:5173`).
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## How to Test with Multiple Users
 
-Follow these steps:
+1. Open the app in one browser window or tab.
+2. Open the same URL in:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+   * Another tab, or
+   * A different browser (Chrome + Firefox), or
+   * An incognito/private window.
+3. Start drawing in one window and observe:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+   * Real-time stroke updates in other windows
+   * Cursor movement indicators
+   * Simultaneous drawing without blocking
 
-# Step 3: Install the necessary dependencies.
-npm i
+This simulates multiple users connected to the same canvas session.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## Known Limitations / Bugs
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+* Canvas state is not persisted; refreshing the page clears the drawing.
+* Global undo/redo is basic and not optimized for very large stroke histories.
+* Performance may degrade if a large number of users draw simultaneously.
+* No authentication or user identity beyond session-based assignment.
+* Mobile touch support is limited and not fully optimized.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Time Spent on the Project
 
-## What technologies are used for this project?
+Approximately **8–10 hours**, including:
 
-This project is built with:
+* Initial canvas drawing implementation
+* Real-time synchronization logic
+* UI iteration and cleanup
+* Testing with multiple concurrent sessions
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
